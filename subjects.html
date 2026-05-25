@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects & Career Guidance - Five Star Tutoring</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo-container">
+        <div class="logo-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="logo-text">
+            <h1>Five Star Tutoring</h1>
+            <p>Learn Today, Lead Tomorrow</p>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="subjects.html" class="nav-link active">Subjects</a>
+        <a href="tutors.html" class="nav-link">Tutors</a>
+        <a href="fees.html" class="nav-link">Fees</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="enroll.html" class="nav-link">Enroll</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+
+<div class="main-content">
+    <h2>SUBJECTS AND CAREER GUIDANCE</h2>
+
+    <!-- Subjects Section -->
+    <section class="subjects-section">
+        <h3>SUBJECTS</h3>
+        <p class="note">
+            <strong>NB:</strong> We only assist with the theory part of practical subjects.
+        </p>
+
+        <div class="subjects-container">
+            <!-- JCE Subjects -->
+            <div class="subject-box">
+                <h4>JCE SUBJECTS</h4>
+                <ul class="subject-list">
+                    <li>English</li>
+                    <li>Setswana</li>
+                    <li>Mathematics</li>
+                    <li>Integrated Science</li>
+                    <li>Social Studies</li>
+                    <li>Religious Education</li>
+                    <li>Moral Education</li>
+                    <li>French</li>
+                    <li>Commerce and Accounting</li>
+                    <li>Commerce and Office Procedures</li>
+                </ul>
+            </div>
+
+            <!-- BGCSE Subjects -->
+            <div class="subject-box">
+                <h4>BGCSE SUBJECTS</h4>
+                <ul class="subject-list">
+                    <li>Mathematics</li>
+                    <li>Physics</li>
+                    <li>Biology</li>
+                    <li>Chemistry</li>
+                    <li>Science Double Award</li>
+                    <li>English</li>
+                    <li>Setswana</li>
+                    <li>Religious Education</li>
+                    <li>History</li>
+                    <li>French</li>
+                    <li>Commerce</li>
+                    <li>Accounting</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Guidance -->
+    <section class="career-section">
+        <h3>CAREER GUIDANCE</h3>
+        
+        <div class="career-grid">
+            <!-- Law Program -->
+            <div class="career-card">
+                <h4>University of Botswana (UB)</h4>
+                <div class="info-item">
+                    <span class="info-label">Program:</span>
+                    Bachelor of Laws (Honours)
+                </div>
+                <div class="info-item requirements">
+                    <span class="info-label">Minimum Requirements:</span>
+                    44 points, Grade B in English (obtained at one sitting)
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Career Opportunities:</span>
+                    Lawyer, Attorney, Advocate, Paralegal
+                </div>
+            </div>
+
+            <!-- Financial Technology -->
+            <div class="career-card">
+                <h4>Botswana School of Business Sciences</h4>
+                <div class="info-item">
+                    <span class="info-label">Program:</span>
+                    Bachelor of Science in Financial Technology
+                </div>
+                <div class="info-item requirements">
+                    <span class="info-label">Minimum Requirements:</span>
+                    34 points with English Grade C and Mathematics Grade C
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Career Opportunities:</span>
+                    Data Analyst, Cybersecurity Specialist, Quantitative Analyst
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-home">
+        <a href="index.html">← Back Home</a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <h4>About Us</h4>
+    <p>Five Star Tutoring is committed to offering quality education through innovation, inclusivity, and integrity.</p>
+    <div class="icon-container">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-tiktok"></i>
+    </div>
+    <p>&copy; 2026 Five Star Tutoring. All rights reserved.</p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+
+    hamburger.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+        
+        // Change icon between bars and X
+        const icon = hamburger.querySelector('i');
+        if (navbar.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+</script>
+
+</body>
+</html>
