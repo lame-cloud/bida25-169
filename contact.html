@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Five Star Tutoring</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> 
+</head>
+<body>
+
+<header class="header">
+    <div class="logo-container">
+        <div class="logo-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="logo-text">
+            <h1>Five Star Tutoring</h1>
+            <p>Learn Today, Lead Tomorrow</p>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link ">About</a>
+        <a href="subjects.html" class="nav-link">Subjects</a>
+        <a href="tutors.html" class="nav-link">Tutors</a>
+        <a href="fees.html" class="nav-link">Fees</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="enroll.html" class="nav-link">Enroll</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+
+<div class="page">
+    <h1>Contact Us</h1>
+
+    <div class="contact-wrapper">
+        <!-- Feedback Form -->
+        <div class="contact-form">
+            <h2>Send us your feedback or inquiry</h2>
+            
+            <form>
+                <label>Your Full Name <span class="required">*</span></label>
+                <input type="text" required placeholder="Enter your full name">
+
+                <label>Email Address <span class="required">*</span></label>
+                <input type="email" required placeholder="your@email.com">
+
+                <label>Phone Number (optional)</label>
+                <input type="tel" value="+267" placeholder="Your phone number">
+
+                <label>Your Message / Feedback <span class="required">*</span></label>
+                <textarea required placeholder="Tell us what you think or ask any question..."></textarea>
+
+                <button type="submit" class="btn-blue">Send Message</button>
+            </form>
+
+            <p class="reply-note">We usually reply within 24 hours via WhatsApp or email.</p>
+        </div>
+
+        <!-- Visit or Call Us -->
+        <div class="contact-info">
+            <h2>Visit or Call Us</h2>
+            
+            <strong>Five Star Tutoring</strong><br>
+            Gaborone, Botswana<br><br>
+
+            <strong>Phone / WhatsApp:</strong><br>
+            <a href="https://wa.me/26777996363" class="contact-link">+267 77996363</a><br><br>
+
+            
+            <strong>Social Media:</strong><br>
+
+<div class="social-links">
+
+
+    <a href="https://facebook.com/fivestartutoring" target="_blank" class="btn-blue">
+        Facebook
+    </a>
+
+
+    <a href="https://www.tiktok.com/@fivestartutoring" target="_blank" class="btn-tiktok">
+        🎵 Follow us on TikTok
+    </a>
+
+
+    <a href="https://wa.me/26777996363?text=Hello%20I%20am%20interested%20in%20Five%20Star%20Tutoring" 
+       target="_blank" class="btn-whatsapp">
+
+        💬 Chat with us on WhatsApp
+    </a>
+    
+
+</div>
+
+            
+
+            <strong>Business Hours:</strong><br>
+            Monday - Friday: 8:00 AM - 6:00 PM<br>
+            Saturday: 8:00 AM - 2:00 PM<br>
+            Sunday: Closed
+
+            <p style="margin-top:25px;">
+                Follow us on TikTok <strong>@fivestartutoring</strong> for study tips and promotions!
+            </p>
+        </div>
+    </div>
+
+    <br><br>
+    <a href="index.html">← Back Home</a>
+</div>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Five Star Tutoring is committed to offering quality education through innovation, inclusivity, and integrity. Join a vibrant community that values your growth and success.</p>
+    <div class="icon-container">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-tiktok"></i>
+    </div>
+    <p>&copy; 2026 Five Star Tutoring. All rights reserved.</p>
+</section>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+
+    hamburger.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+        const icon = hamburger.querySelector('i');
+        if (navbar.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+</script>
+
+</body>
+</html>
