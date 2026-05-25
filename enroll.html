@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now | Five Star Tutoring</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> 
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-container">
+        <div class="logo-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="logo-text">
+            <h1>Five Star Tutoring</h1>
+            <p>Learn Today, Lead Tomorrow</p>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="subjects.html" class="nav-link">Subjects</a>
+        <a href="tutors.html" class="nav-link">Tutors</a>
+        <a href="fees.html" class="nav-link">Fees</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="enroll.html" class="nav-link active">Enroll</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+
+    <main>
+        <section class="enroll-hero">
+            <h1>Enroll Today</h1>
+            <p>Join our students and start your journey to academic excellence</p>
+        </section>
+
+        <div class="enroll-container">
+            <form class="enroll-form" action="#" method="post">
+                <h2>Student Information</h2>
+                
+                <div class="form-grid">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Guardian Name">
+                </div>
+
+                <h2>Course Details</h2>
+                
+                <div class="form-grid">
+                    <select required>
+                        <option value="">Select Level</option>
+                        <option value="jce">JCE</option>
+                        <option value="bgcse">BGCSE</option>
+                    </select>
+                    
+                    <input type="text" placeholder="Subjects Interested In (e.g. Math, English, Science)" required>
+                    
+                    <select>
+                        <option value="">Preferred Package</option>
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+
+                <textarea rows="4" placeholder="Any additional information or special requests..."></textarea>
+
+                <button type="submit" class="btn btn-primary">Submit Enrollment</button>
+
+                <p id="form-message" class="reply-note"></p>
+
+                 </form>
+
+            <div class="back-link">
+                <a href="index.html">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>Five Star Tutoring is committed to offering quality education through innovation, inclusivity, and integrity. Join a vibrant community that values your growth and success.</p>
+        
+        <div class="icon-container">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-tiktok"></i>
+        </div>
+        
+        <p>&copy; 2026 Five Star Tutoring. All rights reserved.</p>
+    </footer>
+
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+
+    hamburger.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+        
+        // Change icon between bars and X
+        const icon = hamburger.querySelector('i');
+        if (navbar.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+</script>
+
+</body>
+</html>
