@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Tutors - Five Star Tutoring</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo-container">
+        <div class="logo-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="logo-text">
+            <h1>Five Star Tutoring</h1>
+            <p>Learn Today, Lead Tomorrow</p>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="subjects.html" class="nav-link">Subjects</a>
+        <a href="tutors.html" class="nav-link active">Tutors</a>
+        <a href="fees.html" class="nav-link">Fees</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="enroll.html" class="nav-link">Enroll</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+
+<main>
+  <section id="our-tutors">
+    <h2>OUR TUTORS</h2>
+    <p>Meet some of our tutors.</p>
+
+    <div class="tutors-grid">
+
+        <article class="tutor-card">
+            <img src="tutor1.jpg" alt="Kelly Kwapa">
+            <h3>Tutor 1</h3>
+            <div class="tutor-info">
+                <p><strong>NAME:</strong> Kelly Kwapa</p>
+                <p><strong>Qualifications:</strong> BSc Mathematics, PGDE</p>
+                <p><strong>Subjects taught:</strong></p>
+                <ul>
+                    <li>JCE Mathematics</li>
+                    <li>BGCSE Mathematics</li>
+                    <li>BGCSE Science Double Award</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="tutor-card">
+            <img src="tutor2.jpg" alt="Feneh Ramasu">
+            <h3>Tutor 2</h3>
+            <div class="tutor-info">
+                <p><strong>NAME:</strong> Feneh Ramasu</p>
+                <p><strong>Qualifications:</strong> BA English and French, PGDE</p>
+                <p><strong>Subjects taught:</strong></p>
+                <ul>
+                    <li>JCE English</li>
+                    <li>BGCSE English</li>
+                    <li>JCE French</li>
+                    <li>BGCSE French</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="tutor-card">
+            <img src="tutor3.jpg" alt="Lumbi Moesi">
+            <h3>Tutor 3</h3>
+            <div class="tutor-info">
+                <p><strong>NAME:</strong> Lumbi Moesi</p>
+                <p><strong>Qualifications:</strong> BCom Accounting</p>
+                <p><strong>Subjects taught:</strong></p>
+                <ul>
+                    <li>JCE Commerce and Accounting</li>
+                    <li>JCE Commerce and Office Procedures</li>
+                    <li>BGCSE Accounting</li>
+                    <li>BGCSE Commerce</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="tutor-card">
+            <img src="tutor4.jpg" alt="Zelna Sianga">
+            <h3>Tutor 4</h3>
+            <div class="tutor-info">
+                <p><strong>NAME:</strong> Zelna Sianga</p>
+                <p><strong>Qualifications:</strong> BA Humanities</p>
+                <p><strong>Subjects taught:</strong></p>
+                <ul>
+                    <li>JCE Social Studies</li>
+                    <li>BGCSE History</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="tutor-card">
+            <img src="tutor5.jpg" alt="Angelah Sabone">
+            <h3>Tutor 5</h3>
+            <div class="tutor-info">
+                <p><strong>NAME:</strong> Angelah Sabone</p>
+                <p><strong>Qualifications:</strong> BEd Science</p>
+                <p><strong>Subjects taught:</strong></p>
+                <ul>
+                    <li>JCE Integrated Science</li>
+                    <li>BGCSE Physics</li>
+                    <li>BGCSE Chemistry</li>
+                    <li>BGCSE Biology</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="tutor-card">
+            <img src="tutor6.jpg" alt="Loreo Issac">
+            <h3>Tutor 6</h3>
+            <div class="tutor-info">
+                <p><strong>NAME:</strong> Loreo Issac</p>
+                <p><strong>Qualifications:</strong> BA Theology</p>
+                <p><strong>Subjects taught:</strong></p>
+                <ul>
+                    <li>JCE Moral Education</li>
+                    <li>JCE Religious Education</li>
+                    <li>BGCSE Religious Education</li>
+                </ul>
+            </div>
+        </article>
+
+    </div>
+
+    <a href="index.html" class="back-home">← Back Home</a>
+</section>
+
+    <a href="index.html" class="back-home">← Back Home</a>
+</section>
+</main>
+
+<footer class="footer">
+    <h4>About Us</h4>
+    <p>Five Star Tutoring is committed to offering quality education through innovation, inclusivity, and integrity.</p>
+    <div class="icon-container">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-tiktok"></i>
+    </div>
+    <p>&copy; 2026 Five Star Tutoring. All rights reserved.</p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+
+    hamburger.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+        
+        // Change icon between bars and X
+        const icon = hamburger.querySelector('i');
+        if (navbar.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+</script>
+
+</body>
+</html>
